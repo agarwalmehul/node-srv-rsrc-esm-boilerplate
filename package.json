@@ -1,0 +1,22 @@
+{
+  "name": "node-srv-rsrc-esm-boilerplate",
+  "version": "1.0.0",
+  "description": "Node Server - Resource Architecture - ES Module - Boilerplate",
+  "main": "app.mjs",
+  "scripts": {
+    "start": "nodemon app.mjs"
+  },
+  "author": "Mehul Agarwal <agarwalmehul92@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/agarwalmehul/node-srv-rsrc-esm-boilerplate.git",
+  "dependencies": {
+    "@m92/express-utils": "0.0.93",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
