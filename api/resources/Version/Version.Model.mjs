@@ -1,4 +1,6 @@
-'use strict'
+import { readFile } from 'fs/promises'
+
+let packageJson = {}
 
 const VersionModel = {
   get
@@ -7,12 +9,15 @@ const VersionModel = {
 export default VersionModel
 
 async function get () {
-  const {
-    npm_package_name: name = '',
-    npm_package_version: version = '',
-    npm_package_description: description = ''
-  } = process.env
+  const { name = '', version = '', description = '' } = packageJson
 
   const data = { name, description, version }
   return data
 }
+
+(async () => {
+  const packageJsonFile = await readFile(
+    new URL('../../../package.json', import.meta.url)
+  )
+  packageJson = JSON.parse(packageJsonFile)
+})()
