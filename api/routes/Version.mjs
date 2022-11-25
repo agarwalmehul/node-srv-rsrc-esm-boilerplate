@@ -1,5 +1,3 @@
-'use strict'
-
 import Express from 'express'
 import { VersionRouter } from '../resources/Version/index.mjs'
 

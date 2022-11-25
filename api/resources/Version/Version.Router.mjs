@@ -1,5 +1,3 @@
-'use strict'
-
 import configureRouter from '../../helpers/configureRouter.mjs'
 import VersionController from './Version.Controller.mjs'
 

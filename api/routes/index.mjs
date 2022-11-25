@@ -1,9 +1,8 @@
-'use strict'
-
 import { ResponseBody, expressUtils } from '../helpers/expressUtils.mjs'
 
 import HealthRouter from './Health.mjs'
 import VersionRouter from './Version.mjs'
+import HandshakeRouter from './Handshake.mjs'
 
 const { resHandler } = expressUtils
 const { handleResponse } = resHandler
@@ -11,6 +10,8 @@ const { handleResponse } = resHandler
 const Routes = [
   { path: '/health', router: HealthRouter },
   { path: '/version', router: VersionRouter },
+  { path: '/handshake', router: HandshakeRouter }
+
 ]
 
 Routes.init = (app) => {

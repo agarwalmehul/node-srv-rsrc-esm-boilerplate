@@ -1,5 +1,3 @@
-'use strict'
-
 import Express from 'express'
 import { HealthRouter } from '../resources/Health/index.mjs'
 

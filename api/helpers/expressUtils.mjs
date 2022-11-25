@@ -1,5 +1,3 @@
-'use strict'
-
 import EXPS_CONFIG from '../../config/EXPS_CONFIG.mjs'
 import {
   ResponseBody,

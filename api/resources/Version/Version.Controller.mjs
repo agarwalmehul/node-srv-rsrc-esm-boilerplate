@@ -1,5 +1,3 @@
-'use strict'
-
 import { ResponseBody } from '../../helpers/expressUtils.mjs'
 import VersionModel from './Version.Model.mjs'
 
